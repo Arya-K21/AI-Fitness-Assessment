@@ -6,7 +6,7 @@ shows a reconciliation bridge, and exports a multi-sheet Excel report.
 
 ## Features
 
-- Accepts two CSV files, a combined CSV with separate header sections, or a
+- Accepts a combined CSV with separate header sections, or a
   combined CSV with a `source` column.
 - Validates transaction IDs, types, dates, and amounts; invalid rows are
   reported instead of stopping the entire reconciliation.
