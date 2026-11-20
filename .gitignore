@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+reconciliation_report.xlsx
+AI Fitness Assesment - Payment Platform Sheet.csv
+AI Fitness Assesment - Bank Account Sheet.csv
