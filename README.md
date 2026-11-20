@@ -91,16 +91,23 @@ Run the test suite with:
 python -m pytest
 ```
 
-## Publish and deploy
+## Deploy on Streamlit Community Cloud
 
-To publish the source code, create a GitHub repository and push this project
-to it. Review the files first and do not publish real transaction data,
-credentials, or generated reports.
+The app is configured to run from the repository root with `app.py` and
+installs its Python dependencies from `requirements.txt`. To publish it:
 
-GitHub stores and versions the source code; it does not run the Streamlit app
-as a hosted service. To host the interactive app, connect the GitHub
-repository to a Streamlit hosting service (for example, Streamlit Community
-Cloud) and set `app.py` as the application entry point.
+1. Push this repository to GitHub.
+2. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/) using
+   the GitHub account that can access the repository.
+3. Choose **Create app**, then select `Arya-K21/AI-Fitness-Assessment`,
+   branch `main`, and main file path `app.py`.
+4. Choose **Deploy**. Streamlit installs `requirements.txt` and provides a
+   public app URL. Later pushes to `main` are deployed automatically.
+
+The bundled CSV is demonstration data. Do not commit real transaction data,
+credentials, or generated reports to a public repository. Uploaded files are
+processed by the app while it is running; do not upload sensitive data unless
+your organization has approved this hosting environment.
 
 ## Repository layout
 
